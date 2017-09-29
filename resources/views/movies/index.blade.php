@@ -1,3 +1,5 @@
+@extends('layout.master')
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,12 +7,14 @@
 </head>
 <body>
 	<h1>Movies:</h1>
-	<ul>
+	@section('content')
 		@foreach($movies as $movie)
-			<h2><li><a href="">{{$movie->title}}</a></li></h2>
-			<p>{{$movie->storyline}}</p>
+			<h2><a href="/movie/{{$movie->id}}">{{$movie->title}}</a></h2>
+			<p>{{strstr($movie->storyline, ".", true)}} ...</p>
 		@endforeach
-	</ul>
+	@endsection
+
+	
 
 
 </body>
