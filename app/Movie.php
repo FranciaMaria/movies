@@ -4,6 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+use Carbon\Carbon;
+
 class Movie extends Model
 {
 	protected $guarded = ['id'];
@@ -14,8 +16,8 @@ class Movie extends Model
     			'title' => 'required | max: 25',
     			'genre' => 'required | max: 15',
     			'director' => 'required | max: 25',
-    			'released_in' => 'required | max: 4',
-    			'storyline' => 'required | min: 15'
+    			'released_in' => 'required | integer | min:1900 | max:date("Y")',
+    			'storyline' => 'required | max: 1000'
     		];
 
     static function getPublishedMovies(){
