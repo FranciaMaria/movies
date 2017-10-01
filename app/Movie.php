@@ -24,8 +24,8 @@ class Movie extends Model
     	return self::get();
     }
 
-        public function comments(){
+    public function comments(){
 
-        return $this->hasMany(Comment::class);
+        return $this->hasMany(\App\Comment::class);
     }
 }

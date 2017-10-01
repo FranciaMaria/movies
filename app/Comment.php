@@ -3,13 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Movie;
+use Movie;
 
 class Comment extends Model
 {
     protected $guarded = ['id'];
 
-    protected $fillable = ['content', 'movie_id', 'created_at'];
+    protected $fillable = ['content'];
 
     
     const STORE_RULES = [
@@ -19,7 +19,7 @@ class Comment extends Model
 
     public function movie(){
 
-    	return $this->belongsTo(Movie::class);
+    	return $this->belongsTo(App\Movie::class);
     }
 
 }

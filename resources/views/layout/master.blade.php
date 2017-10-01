@@ -38,7 +38,8 @@
            
               <h2>@yield('single-title')</h2>
               <p>@yield('single-content')</p>
-              <p>@yield('create-content')</p>
+              <p>@yield('create-movie-content')</p>
+              <p>@yield('create-comment-content')</p>
             </div>
             </div><!--/span-->
           </div><!--/row-->
