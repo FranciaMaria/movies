@@ -1,5 +1,9 @@
 <?php
 
+use App\Movie;
+use App\Comment;
+
+>>>>>>> task 9
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,5 +24,9 @@ Route::get('/movies', ['as' => 'all-movies', 'uses' => 'MoviesController@index']
 Route::get('/movies/create', ['as' => 'create-movie', 'uses' => 'MoviesController@create']);
 
 Route::get('/movie/{id}', ['as' => 'single-movie', 'uses' => 'MoviesController@show']);
+
+Route::get('/movies/{id}', ['as' => 'single-movie', 'uses' => 'MoviesController@show']);
+
+Route::post('movies/{movieId}/comments', ['as' => 'comments-movie', 'uses' => 'CommentsController@store']);
 
 Route::post('/movies', ['as' => 'store-movie', 'uses' => 'MoviesController@store']);

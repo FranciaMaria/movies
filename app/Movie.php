@@ -4,8 +4,6 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-use Carbon\Carbon;
-
 class Movie extends Model
 {
 	protected $guarded = ['id'];
@@ -22,5 +20,10 @@ class Movie extends Model
 
     static function getPublishedMovies(){
     	return self::get();
+    }
+
+        public function comments(){
+
+        return $this->hasMany(Comment::class);
     }
 }

@@ -9,7 +9,11 @@
 	<h1>Movies:</h1>
 	@section('content')
 		@foreach($movies as $movie)
+<<<<<<< HEAD
 			<h2><a href="/movie/{{$movie->id}}">{{$movie->title}}</a></h2>
+=======
+			<h2><a href="/movies/{{$movie->id}}">{{$movie->title}}</a></h2>
+>>>>>>> task 9
 			<p>{{strstr($movie->storyline, ".", true)}} ...</p>
 		@endforeach
 	@endsection
