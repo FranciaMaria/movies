@@ -1,14 +1,7 @@
 <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar">
           <div class="list-group">
-            <a href="#" class="list-group-item active">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
+        @for($i = count($movies)-1; $i>count($movies)-6; $i--)
+            <a href="/movies/{{$movies[$i]}}" class="list-group-item">{{$movies[$i]->title}}</a>
+        @endfor
           </div>
         </div><!--/span-->
