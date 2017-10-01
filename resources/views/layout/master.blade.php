@@ -38,12 +38,9 @@
            
               <h2>@yield('single-title')</h2>
               <p>@yield('single-content')</p>
-<<<<<<< HEAD
               <p>@yield('create-movie-content')</p>
               <p>@yield('create-comment-content')</p>
-=======
               <p>@yield('create-content')</p>
->>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
             </div>
             </div><!--/span-->
           </div><!--/row-->

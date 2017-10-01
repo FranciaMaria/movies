@@ -24,11 +24,12 @@ class Movie extends Model
     	return self::get();
     }
 
+    static function getPublishedMoviesByGenre($genre) {
+        return self::where('genre', "$genre")->get();
+    }
+
     public function comments(){
 
         return $this->hasMany(\App\Comment::class);
-        public function comments(){
-
-        return $this->hasMany(Comment::class);
     }
 }

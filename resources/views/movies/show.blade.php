@@ -9,21 +9,15 @@
 	@section('single-title')
 	<h1>{{$movie->title}}</h1>
 	@endsection
-<<<<<<< HEAD
-	
-    @section('single-content')
-=======
+
 	@section('single-content')
->>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
-	<p><strong>Genre:</strong> {{$movie->genre}}</p>
+
+	<p><strong>Genre: </strong><a href="/movies/genres/{{$movie->genre}}">{{$movie->genre}}</a></p>
 	<p><strong>Director:</strong> {{$movie->director}}</p>
 	<p><strong>Released in:</strong> {{$movie->released_in}}</p>
 	<p><strong>Storyline:</strong> {{$movie->storyline}}</p>
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
     @if(count($movie->comments))
 
         <hr/>
@@ -81,9 +75,6 @@
     </form>
 
 @endsection
-<<<<<<< HEAD
 
-=======
->>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
 </body>
 </html>

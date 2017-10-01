@@ -1,11 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-=======
 use App\Movie;
 use App\Comment;
-
->>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,13 +23,8 @@ Route::get('/movies/create', ['as' => 'create-movie', 'uses' => 'MoviesControlle
 
 Route::get('/movies/{id}', ['as' => 'single-movie', 'uses' => 'MoviesController@show']);
 
+Route::get('/movies/genres/{genre}', ['as' => 'genre-movies', 'uses' => 'GenresController@show']);
+
 Route::post('movies/{movieId}/comments', ['as' => 'comments-movie', 'uses' => 'CommentsController@store']);
 
-<<<<<<< HEAD
 Route::post('/movies', ['as' => 'store-movie', 'uses' => 'MoviesController@store']);
-
-
-
-=======
-Route::post('/movies', ['as' => 'store-movie', 'uses' => 'MoviesController@store']);
->>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
