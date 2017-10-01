@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 use Comment;
 
->>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
 class Movie extends Model
 {
 	protected $guarded = ['id'];
