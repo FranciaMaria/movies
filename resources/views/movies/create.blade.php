@@ -4,7 +4,11 @@
     Create new movie
 @endsection
 
+<<<<<<< HEAD
 @section('create-movie-content')
+=======
+@section('create-content')
+>>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
 
 <h2>Create new movie</h2>
 
@@ -34,7 +38,11 @@
 
         <div class="form-group">
 
+<<<<<<< HEAD
             <label for="director">Director</label>
+=======
+            <label for="genre">Director</label>
+>>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
 
             <textarea class="form-control" id="director" name="director"></textarea>
             @include('partials.error-message', ['fieldTitle' => 'director'])
@@ -44,7 +52,11 @@
 
         <div class="form-group">
 
+<<<<<<< HEAD
             <label for="released_in">Released In</label>
+=======
+            <label for="genre">Released In</label>
+>>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
 
             <textarea class="form-control" id="released_in" name="released_in"></textarea>
             @include('partials.error-message', ['fieldTitle' => 'released_in'])
@@ -53,7 +65,11 @@
 
         <div class="form-group">
 
+<<<<<<< HEAD
             <label for="storyline">Storyline</label>
+=======
+            <label for="genre">Storyline</label>
+>>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
 
             <textarea class="form-control" id="storyline" name="storyline"></textarea>
             @include('partials.error-message', ['fieldTitle' => 'storyline'])
@@ -69,6 +85,7 @@
 
     </form>
 
+<<<<<<< HEAD
     @section('create-comment-content')
 
     <form method="POST" action="{{ route('comments-movie', ['movie_id' => $movie->id]) }}">
@@ -95,4 +112,6 @@
 
     @endsection
 
+=======
+>>>>>>> 95f8943bdce478774e4328791111756cfd98a6e9
 @endsection
