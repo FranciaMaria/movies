@@ -14,9 +14,7 @@
 	<p><strong>Director:</strong> {{$movie->director}}</p>
 	<p><strong>Released in:</strong> {{$movie->released_in}}</p>
 	<p><strong>Storyline:</strong> {{$movie->storyline}}</p>
-<<<<<<< HEAD
-	@endsection
-=======
+
 
     @if(count($movie->comments))
 
@@ -75,6 +73,6 @@
     </form>
 
 @endsection
->>>>>>> task 9
+
 </body>
 </html>

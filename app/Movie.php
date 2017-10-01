@@ -4,6 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+use Comment;
+
 class Movie extends Model
 {
 	protected $guarded = ['id'];
