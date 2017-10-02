@@ -1,11 +1,10 @@
-@extends('layout.master')
+@extends('layout.master-show')
 
 @section('title')
     Create new movie
 @endsection
 
 
-@section('create-movie-content')
 
 @section('create-content')
 
@@ -39,8 +38,6 @@
         <div class="form-group">
 
 
-            <label for="director">Director</label>
-
             <label for="genre">Director</label>
 
 
@@ -63,7 +60,6 @@
 
         <div class="form-group">
 
-            <label for="storyline">Storyline</label>
 
             <label for="genre">Storyline</label>
 
@@ -81,32 +77,6 @@
         </div>
 
     </form>
-
-    @section('create-comment-content')
-
-    <form method="POST" action="{{ route('comments-movie', ['movie_id' => $movie->id]) }}">
-
-        {{ csrf_field() }}
-
-        <div class="form-group">
-
-            <label for="content">Content</label>
-
-            <textarea class="form-control" id="content" name="content"></textarea>
-            @include('partials.error-message', ['fieldTitle' => 'content'])
-          
-            
-        </div>
-
-        <div class="form-group">
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-
-        </div>
-
-    </form>
-
-    @endsection
 
 
 @endsection
