@@ -9,7 +9,7 @@ class Comment extends Model
 {
     protected $guarded = ['id'];
 
-    protected $fillable = ['content'];
+    //protected $fillable = ['content'];
 
 
     

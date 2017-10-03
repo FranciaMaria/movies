@@ -27,4 +27,4 @@ Route::get('/movies/genres/{genre}', ['as' => 'genre-movies', 'uses' => 'GenresC
 
 Route::post('/movies', ['as' => 'store-movie', 'uses' => 'MoviesController@store']);
 
-Route::post('movies/{movieId}', ['as' => 'comments-movie', 'uses' => 'CommentsController@store']);
+Route::post('movies/{movieId}/comment/add', ['as' => 'comments-movie', 'uses' => 'CommentsController@store']);

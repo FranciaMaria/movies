@@ -14,7 +14,7 @@ class CommentsController extends Controller
 
     	$request->validate(Comment::STORE_RULES);
 
-    	$movie->comments()->create($request->all());
+    	$movie->comments()->create($request->all()); //umesto save stajalo je create i umesto $request $request->all()
 
     	return redirect()->route('single-movie', [ 'id' => $movieId ]);
     }

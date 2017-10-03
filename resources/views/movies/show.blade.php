@@ -59,7 +59,6 @@
         <div class="form-group">
 
             <label for="content">Comment:</label>
-
             <textarea class="form-control" id="content" name="content"></textarea>
 
             @include('partials.error-message', ['fieldTitle' => 'content'])
