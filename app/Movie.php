@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-use Comment;
+use App\Comment;
 
 class Movie extends Model
 {
@@ -32,4 +32,17 @@ class Movie extends Model
 
         return $this->hasMany(\App\Comment::class);
     }
+
+    public function addComment($content){
+
+        /*$this->comments()->create([
+            'content' => $content,
+            'movie_id' => $this->id,
+            'created_at' => date('Y-m-d h:i:s'),
+        ]);*/
+
+        $this->comments()->create(compact('content'));
+
+    }
+
 }

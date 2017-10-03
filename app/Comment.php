@@ -9,12 +9,10 @@ class Comment extends Model
 {
     protected $guarded = ['id'];
 
-    //protected $fillable = ['content'];
-
-
+    protected $fillable = ['content', 'movie_id'];
     
     const STORE_RULES = [
-    		'content' => 'required',
+    		'content' => 'required | min:2',
     		'movie_id' => 'required'
     	];
 

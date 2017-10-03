@@ -52,7 +52,7 @@
 
      <h4>Post a comment</h4>
 
-    <form method="POST" action="{{ route('comments-movie', ['movie_id' => $movie->id]) }}">
+    <form method="POST" action="/movies/{{$movie->id}}/comments">
 
         {{ csrf_field() }}
 
